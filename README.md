@@ -1,7 +1,7 @@
 
 
 
-23 Dec 2023: Firefox headless fix
+23/Dec/2023:Firefox headless fix
 <code>
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
@@ -21,7 +21,7 @@ driver.get("https://www.google.com")
 # Uncomment the line below if you want to save a screenshot
 #driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
-<code>
+</code>
 
 ####### BELOW ORIGINAl REPO CONTENT
 # Why archive?
