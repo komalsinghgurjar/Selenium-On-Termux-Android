@@ -2,7 +2,7 @@
 
 
 23/Dec/2023:Firefox headless fix
-<code>
+<pre><code>
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 
@@ -22,7 +22,7 @@ driver.get("https://www.google.com")
 #driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
 </code>
-
+</pre>
 ####### BELOW ORIGINAl REPO CONTENT
 # Why archive?
 
