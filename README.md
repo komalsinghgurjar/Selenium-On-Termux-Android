@@ -1,3 +1,29 @@
+
+
+
+23 Dec 2023: Firefox headless fix
+<code>
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service
+
+gecko_driver_path = '/data/data/com.termux/files/usr/bin/geckodriver'  # Gecko driver path
+
+options = webdriver.FirefoxOptions()
+options.add_argument("--headless")
+
+# Create a Service instance with the path to GeckoDriver
+service = Service(executable_path=gecko_driver_path)
+
+# Use the Service instance when creating the Firefox WebDriver
+driver = webdriver.Firefox(service=service, options=options)
+
+driver.get("https://www.google.com")
+# Uncomment the line below if you want to save a screenshot
+#driver.save_screenshot("/sdcard/download/screenshot.png")
+driver.quit()
+<code>
+
+####### BELOW ORIGINAl REPO CONTENT
 # Why archive?
 
 - Testing and finding solutions is really difficult, so I won't continue this project.
